@@ -1,0 +1,26 @@
+Instalamos los siguientes paquetes:
+
+Paquete de validación para los DTO
+npm i --save class-validator class-transformer
+
+Paquete de documentación Swagger
+npm install --save @nestjs/swagger
+
+Paquete de variables de entorno
+npm i --save @nestjs/config
+
+Paquete de servidor estatico para evitar errores 404 en la ruta raiz
+npm install --save @nestjs/serve-static
+
+Paquete de pipes
+npm i url-slug
+
+Paquete de Mongo
+npm i @nestjs/mongoose mongoose
+
+Paquete de Bcryptjs
+npm i bcryptjs
+
+Paquete de encriptado de password
+npm install --save @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt
