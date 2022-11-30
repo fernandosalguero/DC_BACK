@@ -4,11 +4,16 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { MongooseModule } from '@nestjs/mongoose';
+
+//MODULOS PROPIOS CREADOS
 import { AuthModule } from './auth/auth.module';
 import { UsuarioComercioModule } from './Usuario_Comercio/usuario_comercio.module';
 import { UsuarioFamiliaModule } from './Usuario_Familia/usuario_familia.module';
 import { UsersModule } from './users/users.module';
-import { MongooseModule } from '@nestjs/mongoose';
+import { LandingModule } from './landing/landing.module';
+
+
 
 
 @Module({
@@ -28,7 +33,8 @@ import { MongooseModule } from '@nestjs/mongoose';
     AuthModule,
     UsuarioComercioModule,
     UsuarioFamiliaModule,
-    UsersModule
+    UsersModule,
+    LandingModule,
     
   ],
   controllers: [AppController],

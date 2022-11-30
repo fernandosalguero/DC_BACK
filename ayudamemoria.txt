@@ -1,0 +1,8 @@
+## 
+Creamos un modulo con el siguiente comando
+nest g res <nombre del modulo>
+Modificamos el DTO con las propiedades (Colocamos los validadores)
+Colocamos el Swagger (dentor del controlador @ApiTags('<nombre del tag>'))
+Creamos la carpeta "models" y el archivo "schema" y colocamos las propiedades que van en la base de datos
+En el modulo principal, inyectamos el schema 
+Modificamos el servicio, agregando el constructor 

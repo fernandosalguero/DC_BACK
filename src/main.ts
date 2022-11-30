@@ -21,6 +21,8 @@ async function bootstrap() {
     .addTag('UsuarioComercio_Comercio')
     .addTag('UsuarioComercio_Catalogo')
     .addTag('UsuarioComercio_Promosiones')
+    .addTag('Correos_Landing')
+    .addTag('UsuariosFamilia')
     .addTag('')
 
     .build();
@@ -30,6 +32,7 @@ async function bootstrap() {
 
   // Validadores globales 
   app.useGlobalPipes(new ValidationPipe())
+  
   await app.listen(3000);
 }
 bootstrap();
